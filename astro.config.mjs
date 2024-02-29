@@ -8,8 +8,9 @@ export default defineConfig({
   experimental: {
     viewTransitions: true,
   },
-  output: 'server',
-  adapter: vercel(),
   integrations: [tailwind(), compress()],
-  webAnalytics: { enabled: true },
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true },
+  }),
 });
