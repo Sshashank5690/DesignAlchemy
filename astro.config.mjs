@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import compress from 'astro-compress';
-import vercel from '@astrojs/vercel/serverless'; // Import Vercel Analytics adapter
+import vercel from '@astrojs/vercel/serverless';
+// Import Vercel Analytics adapter
 
 // https://astro.build/config
 export default defineConfig({
