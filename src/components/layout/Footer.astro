@@ -104,12 +104,7 @@ const bottomLinks = [
                       target={link.isExternal ? '_blank' : undefined}
                       rel={link.isExternal ? 'noopener' : undefined}
                     >
-                    {link.name === 'Owners Website' ? 
-                     <span style={`background: -webkit-linear-gradient(left, blue, darkblue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;`}>
-                      {link.name}
-                     </span> 
-                     : link.name
-                    }
+                    {link.name}
                       {link.isExternal && (
                         <svg
                           class="h-4 w-4"
