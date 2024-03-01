@@ -5,22 +5,17 @@ const bottomLinks = [
     links: [
       {
         name: 'Github',
-        href: 'https://github.com/',
+        href: 'https://github.com/Sshashank5690',
         isExternal: true,
       },
       {
         name: 'Twitter',
-        href: 'https://twitter.com/',
+        href: 'https://twitter.com/sshashanksingh_',
         isExternal: true,
       },
       {
-        name: 'Instagram',
-        href: 'https://instagram.com/',
-        isExternal: true,
-      },
-      {
-        name: 'Facebook',
-        href: 'https://facebook.com/',
+        name: 'Owners Website',
+        href: 'https://www.shashanksingh.in/',
         isExternal: true,
       },
     ],
@@ -71,7 +66,9 @@ const bottomLinks = [
     ],
   },
 ];
+
 ---
+
 
 <footer
   class="bg-primary-500/10 dark:bg-primary-400/10 mt-16 py-16 lg:mt-20 lg:py-20"
@@ -81,18 +78,15 @@ const bottomLinks = [
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
       <div class="flex max-w-sm flex-col items-start gap-6 sm:gap-8">
-        <img
-          class="h-8 w-auto"
-          width="65"
-          height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
-          alt="Stone"
-        />
+        <div class="flex">
+          <a href="/" style={`background: -webkit-linear-gradient(left, rgb(95, 202, 237), rgb(5, 5, 137)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: 'Poppins'; font-size: 26px; font-weight: 600;`}>
+            DesignAlchemy
+          </a>
+        </div>
         <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
-          Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
-          Startup websites.
+          DesignAlchemy is a design and development agency that specializes in creating beautiful websites.
         </p>
-        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2023 Stone</p>
+        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2024 DesignAlchemy</p>
       </div>
 
       <!-- Bottom links -->
@@ -110,7 +104,12 @@ const bottomLinks = [
                       target={link.isExternal ? '_blank' : undefined}
                       rel={link.isExternal ? 'noopener' : undefined}
                     >
+                    {link.name === 'Owners Website' ? 
+                     <span style={`background: -webkit-linear-gradient(left, blue, darkblue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;`}>
                       {link.name}
+                     </span> 
+                     : link.name
+                    }
                       {link.isExternal && (
                         <svg
                           class="h-4 w-4"
