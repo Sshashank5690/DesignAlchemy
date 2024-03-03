@@ -1,36 +1,28 @@
 ---
 const pricing = [
   {
-    name: 'Basic',
-    description: 'For development, staging, and small production projects.',
-    periodicity: '/month',
-    price: '$10',
-    action: 'Buy Now',
-    features: ['5 Seats', '1,000 Projects', 'Lifetime access', 'Community Support'],
+    name: 'Basic Landing Page website',
+    description: 'Campaigne website, Portfolio etc',
+    periodicity: '6 Days',
+    price: '120€',
+    action: 'Know More',
+    features: ['2-3 Pages', 'Modern Design', '2 Revisions', 'Continous Support'],
   },
   {
-    name: 'Pro',
-    description: 'For high-scale and mission critical projects.',
-    isFlagged: true,
-    periodicity: '/month',
-    price: '$25',
-    action: 'Buy Now',
-    features: ['10 Seats', '10,000 Projects', 'Lifetime access', 'Email Support', 'Free updates'],
+    name: 'Business Website',
+    description: 'For small businesses and startups. Such as Hotels, Restaurants, etc',
+    periodicity: '10-15 Days',
+    price: '145€ - 180€',
+    action: 'Know More',
+    features: ['4-5 Pages', 'Interactive User Interface', 'Client Requested Features', 'Additional Support', 'Security'],
   },
   {
-    name: 'Team',
-    description: 'For teams with more security, support, and performance needs.',
-    periodicity: '',
-    price: 'Custom',
-    action: 'Buy Now',
-    features: [
-      'Unlimited Seats',
-      'Unlimited Projects',
-      'Lifetime access',
-      'Email and Chat Support',
-      'High-Performance',
-      'Free updates',
-    ],
+    name: 'High Scale Custom Website',
+    description: 'Custom websites  requested by clients. Such as E-commerce, Social Media, etc',
+    periodicity: '25-30 Days',
+    price: '500€ - 800€',
+    action: 'Know More',
+    features: ['7-8 Pages', 'Interactive User Interface', 'Client Requested Features', 'Additional Support for websites', 'Security'],
   },
 ];
 ---
@@ -43,7 +35,6 @@ const pricing = [
           <div
             class:list={[
               'relative flex flex-col gap-8 rounded-3xl p-8',
-              item.isFlagged && 'bg-primary-500/10 dark:bg-primary-400/10',
             ]}
           >
             <div class="flex-1">
@@ -74,10 +65,10 @@ const pricing = [
               </ul>
             </div>
             <a
-              href="#"
+              href="/contact"
               class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
-              Buy now
+              Contact
             </a>
           </div>
         ))
